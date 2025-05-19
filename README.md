@@ -113,7 +113,7 @@ CLV Computation:
 Handling Edge Cases:
 •	Used COALESCE to safely handle users with no transactions.
 •	Guarded against division-by-zero errors using a CASE statement to skip invalid records.
-•	________________________________________
+________________________________________
 Challenges Faced
 1. Mixing Savings and Withdrawals Cleanly
 Merging two different transaction sources (savings and withdrawals) in a way that maintains profit logic and schema consistency was a bit tricky. I handled this by unifying the structure using UNION ALL and clearly labelling the profit calculation.
